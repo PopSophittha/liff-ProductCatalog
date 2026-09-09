@@ -1,0 +1,89 @@
+*{box-sizing:border-box}
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#18202a;background:#f5f7fb}
+body{margin:0;background:#f5f7fb}
+button{font:inherit}
+.app{max-width:760px;margin:0 auto;min-height:100vh}
+.topbar{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:10px;padding:14px 16px;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid #e8ebf0}
+.eyebrow{font-size:10px;font-weight:800;letter-spacing:.12em;color:#7b8491}
+h1{font-size:20px;margin:2px 0 0}
+.iconBtn{width:38px;height:38px;border:0;border-radius:12px;background:#eef2f7;font-size:28px;line-height:1}
+.hidden{display:none!important}
+main{padding:16px}
+.sectionTitle{font-weight:800;margin:18px 0 10px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.card{border:1px solid #e2e7ee;background:#fff;border-radius:16px;padding:14px;text-align:left;box-shadow:0 2px 8px rgba(0,0,0,.03);cursor:pointer}
+.card:active{transform:scale(.99)}
+.card .code{font-size:11px;color:#8a94a3;margin-bottom:4px}
+.card .name{font-weight:750;line-height:1.35}
+.sub{background:#fff;border:1px solid #e4e8ef;border-radius:13px;padding:11px 12px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center}
+.sub button{border:0;background:none;text-align:left;flex:1;font-weight:650}
+.arrow{color:#9aa3af}
+.previewHead{display:flex;justify-content:space-between;align-items:end;margin-top:22px}
+.muted{font-size:12px;color:#7d8794}
+.product{display:flex;gap:12px;background:#fff;border:1px solid #e3e7ed;border-radius:15px;padding:12px;margin:8px 0}
+.thumb{width:64px;height:64px;border-radius:12px;background:#f0f2f5;object-fit:cover;flex:0 0 auto}
+.thumb.empty{display:flex;align-items:center;justify-content:center;font-size:24px;color:#aab1bb}
+.pname{font-weight:750;line-height:1.35}
+.meta{font-size:12px;color:#7b8490;margin-top:4px}
+.price{font-weight:800;margin-top:5px}
+.pager{display:flex;justify-content:center;align-items:center;gap:8px;margin:16px 0 24px}
+.pageBtn{border:1px solid #dfe4ea;background:#fff;border-radius:10px;padding:8px 12px}
+.pageNum{min-width:38px;text-align:center;font-weight:750}
+.loading{padding:45px 10px;text-align:center;color:#7b8490}
+.error{padding:14px;background:#fff1f1;color:#a32626;border:1px solid #ffd1d1;border-radius:14px}
+.mode{display:flex;gap:10px;margin-top:12px}
+.mode button{flex:1;border:0;border-radius:16px;padding:18px;background:#fff;box-shadow:0 3px 14px rgba(0,0,0,.05);font-weight:800}
+.search{width:100%;padding:13px 14px;border:1px solid #dfe4ea;border-radius:13px;background:#fff;outline:none}
+@media(max-width:520px){.grid{grid-template-columns:1fr 1fr}.card{padding:12px}}
+.productBtn{width:100%;display:flex;gap:12px;align-items:flex-start;text-align:left;cursor:pointer;color:inherit}
+.productBtn:active{transform:scale(.99)}
+.productText{min-width:0;flex:1}
+.detailCard{background:#fff;border:1px solid #e3e7ed;border-radius:18px;padding:14px}
+.detailImage{display:block;width:100%;max-width:320px;height:280px;margin:0 auto 18px;border-radius:16px;background:#f0f2f5;object-fit:contain}
+.detailImage.empty{display:flex;align-items:center;justify-content:center;font-size:48px;color:#aab1bb}
+.detailRow{padding:11px 0;border-bottom:1px solid #edf0f4}
+.detailRow:last-child{border-bottom:0}
+.detailLabel{font-size:12px;font-weight:750;color:#7b8490}
+.detailLabel span{display:block;font-weight:500;font-size:11px;color:#a0a8b3;margin-top:2px}
+.detailValue{margin-top:3px;line-height:1.45;word-break:break-word}
+.loginCard{max-width:420px;margin:50px auto;background:#fff;border:1px solid #e3e7ed;border-radius:20px;padding:24px;box-shadow:0 4px 18px rgba(0,0,0,.05)}
+.loginLogo{text-align:center;font-size:48px}.loginCard h2{text-align:center;margin:8px 0}.loginCard form{display:grid;gap:14px;margin-top:20px}.loginCard label{font-size:13px;font-weight:700}.loginCard input{display:block;width:100%;margin-top:6px;padding:13px;border:1px solid #dfe4ea;border-radius:12px;outline:none}.primary{border:0;border-radius:13px;padding:13px;background:#18202a;color:#fff;font-weight:800;cursor:pointer}.small{padding:15px}.userBar{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #e3e7ed;border-radius:14px;padding:10px 12px;margin-bottom:12px}.userBar span{font-size:11px;color:#7b8490;background:#f0f2f5;padding:4px 8px;border-radius:999px}.userBar button{margin-left:auto;border:0;background:none;color:#8b3030;font-size:12px}.detailRole{font-size:11px;color:#7b8490;background:#f5f7fb;border-radius:10px;padding:8px;margin-bottom:8px}
+.productHero{padding:2px 0 4px}.productHero h2{font-size:20px;line-height:1.35;margin:9px 0 0}.barcodeChip{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.04em;background:#f0f2f5;border-radius:9px;padding:5px 8px}.categoryPath{margin:12px 0 2px;font-size:13px;font-weight:700;color:#5d6672}.categoryPath span{color:#a0a8b3;padding:0 4px}.detailSection{margin-top:18px;padding-top:14px;border-top:1px solid #edf0f4}.sectionCaption{font-size:12px;font-weight:850;color:#7b8490;text-transform:none;margin-bottom:8px}.priceLine{display:flex;justify-content:space-between;align-items:center;padding:9px 0}.priceLine span{font-size:13px;color:#555f6c}.priceLine b{font-size:16px}.priceCombo{display:flex;align-items:center;justify-content:flex-end;gap:4px;font-size:13px;margin:-2px 0 4px}.priceParen{color:#6c7480}.thaiPrice{font-weight:700}.optionList{display:flex;flex-wrap:wrap;gap:7px}.optionChip,.adminTag{display:inline-flex;align-items:center;padding:6px 9px;border-radius:999px;background:#f0f2f5;font-size:12px;font-weight:700}.statusLine{display:flex;justify-content:space-between;padding:6px 0;font-size:12px}.adminSection{margin-top:22px;padding-top:18px;border-top:2px solid #e6eaf0}.adminTitle{font-size:15px;font-weight:900;margin-bottom:10px}.adminPair{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid #edf0f4;font-size:13px}.adminPair b{white-space:nowrap}.adminBlock{padding:12px 0;border-bottom:1px solid #edf0f4;font-size:13px;line-height:1.55}.adminBlock:last-child{border-bottom:0}.adminTags{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}.remarks{white-space:pre-wrap;margin-top:5px;color:#555f6c}.detailImage{max-height:300px}
+.adminCheck{display:inline-flex;align-items:center;gap:7px;padding:7px 10px;border:1px solid #e0e5eb;border-radius:10px;background:#fff;font-size:12px;font-weight:700}.adminCheck small{font-size:10px;color:#8a94a3;font-weight:600}.checkBox{width:18px;height:18px;border:1.5px solid #aeb7c2;border-radius:4px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;background:#fff}.adminCheck.checked .checkBox{background:#18202a;color:#fff;border-color:#18202a}.adminTags{display:flex;flex-wrap:wrap;gap:7px;margin-top:8px}
+
+.barcodeVisual{width:100%;max-width:360px;margin:8px auto 14px;padding:8px 10px 5px;background:#fff;border:1px solid #edf0f4;border-radius:12px;box-sizing:border-box;overflow:hidden}
+.barcodeVisual svg{display:block;width:100%;height:auto;max-height:92px}
+.barcodeNumberOnly{text-align:center;font-weight:800;letter-spacing:.08em;padding:10px}
+
+.saleThaiLine{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:8px 0 2px;font-size:17px;line-height:1.45}
+.saleThaiLine strong{font-size:20px}
+.priceLevels{margin-left:0;text-align:left;padding-left:8px;font-size:15px;font-weight:700;color:#555}
+
+.salePriceBlock{margin:8px 0 10px}
+.saleThaiLine{display:flex;align-items:baseline;justify-content:flex-start;gap:10px;margin:0;font-size:17px;line-height:1.45;white-space:nowrap}
+.saleThaiLine .saleLabel{font-weight:700;min-width:72px}
+.saleThaiLine>strong{font-size:20px}
+.saleThaiLine .thaiInline{font-weight:700}
+.saleThaiLine .thaiInline strong{font-size:20px}
+.priceLevels{margin-left:82px;margin-top:1px;text-align:left;font-size:15px;font-weight:700;color:#555;line-height:1.35}
+
+/* FINAL v2: Product Detail price alignment */
+.productTitleCentered{text-align:center;width:100%;margin-left:auto;margin-right:auto}
+.salePriceBlock{width:100%;box-sizing:border-box;margin:8px 0 10px}
+.saleThaiLine{display:flex;align-items:baseline;justify-content:flex-end;gap:10px;width:100%;margin:0;font-size:17px;line-height:1.45;white-space:nowrap;text-align:right}
+.saleThaiLine .saleLabel{font-weight:700;min-width:auto}
+.saleThaiLine>strong{font-size:20px}
+.saleThaiLine .thaiInline{font-weight:700}
+.saleThaiLine .thaiInline strong{font-size:20px}
+.priceLevels{margin-left:0;margin-top:1px;width:100%;text-align:right;font-size:15px;font-weight:700;color:#555;line-height:1.35}
+
+/* FINAL v3 */
+.productHero{position:relative;width:100%}
+.detailCategoryTop{width:100%;box-sizing:border-box;text-align:right;margin:0 0 6px;font-size:14px;font-weight:700;color:#687385}
+.saleThaiLine{display:flex;align-items:baseline;justify-content:space-between;width:100%;gap:12px;margin:8px 0 2px;font-size:17px;line-height:1.45;text-align:left;white-space:nowrap}
+.saleThaiLine .saleLabel{font-weight:700;min-width:72px;text-align:left}
+.saleValue{margin-left:auto;text-align:right;display:flex;align-items:baseline;justify-content:flex-end;gap:8px}
+.saleThaiLine>.saleValue>strong{font-size:20px}
+.saleThaiLine .thaiInline{font-weight:700}
+.saleThaiLine .thaiInline strong{font-size:20px}
+.priceLevels{margin-left:72px;width:calc(100% - 72px);text-align:right}
