@@ -117,6 +117,7 @@ function renderAdminSection(a){
     return `<span class="adminCheck ${yes?'checked':''}"><span class="checkBox">${yes?'✓':' '}</span><span>${esc(label)}</span><small>${yes?'TRUE':no?'FALSE':esc(s)}</small></span>`;
   };
   return `<section class="adminSection"><div class="adminTitle">ข้อมูลสำหรับ Admin</div>
+    ${a.cost!==undefined && a.cost!==''?`<div class="adminCost"><span>ราคาทุน</span><b>฿${esc(a.cost)}</b></div>`:''}
     ${pair('บริษัท',a.companyName,a.companyPrice)}
     ${pair('ร้านที่ 1',a.shop1,a.shop1Price)}
     ${pair('ร้านที่ 2',a.shop2,a.shop2Price)}

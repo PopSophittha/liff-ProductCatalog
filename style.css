@@ -87,3 +87,8 @@ main{padding:16px}
 .saleThaiLine .thaiInline{font-weight:700}
 .saleThaiLine .thaiInline strong{font-size:20px}
 .priceLevels{margin-left:72px;width:calc(100% - 72px);text-align:right}
+
+/* FINAL v6 - Admin cost from column K */
+.adminCost{display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid #e5e9ef;font-size:17px}
+.adminCost span{font-weight:700}
+.adminCost b{font-size:19px}
